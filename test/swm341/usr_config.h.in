@@ -1,0 +1,7 @@
+#pragma once
+
+#define USING_SYS @USING_SYS@
+#define USING_PORTA @USING_PORTA@
+#define USING_PORTB @USING_PORTB@
+
+// #cmakedefine USE_MYMATH
