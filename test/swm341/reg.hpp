@@ -35,7 +35,7 @@ struct reg_t
     }
 
     inline static void set_offset(int voffset, int width){
-        return (read() | BIT_MASK(voffset, width));
+        write(read() | BIT_MASK(voffset, width));
     }
 
     inline static void clear_mask(reg_width vmask){
@@ -43,7 +43,7 @@ struct reg_t
     }
 
     inline static void clear_offset(int voffset, int width){
-        return (read() & (~BIT_MASK(voffset, width)));
+        write(read() & (~BIT_MASK(voffset, width)));
     }
 };
 
